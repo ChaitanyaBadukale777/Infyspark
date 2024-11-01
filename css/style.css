@@ -7,6 +7,8 @@
     text-decoration: none;
     transition: all 0.2s linear;
     font-family: 'Fira Sans', sans-serif;
+    scrollbar-width: none; /* hides scrollbar in Firefox */
+    -ms-overflow-style: none; /* hides scrollbar in IE and Edge */
 }
 :root{
     --min-color: #fff;
@@ -73,6 +75,12 @@ header .logo{
     padding: 0.4rem;
     width: 200px;
     z-index: 1;
+    
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
 }
 
 header .navbar a{
@@ -83,6 +91,31 @@ header .navbar a{
     padding: 0.4rem ;
     z-index: 1;
 }
+
+.blend-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    mix-blend-mode: screen; /* This makes black areas transparent */
+    opacity: 0.8; /* Adjust opacity for better blending */
+}
+
+.logo-wish {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the overlay image */
+    width: 400px; /* Same width as the background image */
+    height: auto;
+    mix-blend-mode: screen; /* Blend the overlay with the background */
+    opacity: 0.8; /* Adjust opacity to control blend effect */
+    pointer-events: none; /* Ensure it's not interactive */
+}
+
 header .navbar a:hover,
 header .fa-bars:hover{
     color: var(--sc-color);
@@ -430,6 +463,7 @@ header .fa-bars{
 /* media query  */
 
 @media(max-width:850px){
+
 
     header .fa-bars{
         display: block;
