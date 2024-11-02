@@ -92,7 +92,7 @@ header .navbar a{
     z-index: 1;
 }
 
-.blend-video {
+/* .blend-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -100,21 +100,21 @@ header .navbar a{
     height: 100%;
     object-fit: cover;
     pointer-events: none;
-    mix-blend-mode: screen; /* This makes black areas transparent */
-    opacity: 0.8; /* Adjust opacity for better blending */
-}
+    mix-blend-mode: screen; 
+    opacity: 0.8; 
+} */
 
-.logo-wish {
+/* .logo-wish {
     position: absolute;
     top: 150%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the overlay image */
-    width: 400px; /* Same width as the background image */
+    transform: translate(-50%, -50%); 
+    width: 400px; 
     height: auto;
-    mix-blend-mode: screen; /* Blend the overlay with the background */
-    opacity: 0.8; /* Adjust opacity to control blend effect */
-    pointer-events: none; /* Ensure it's not interactive */
-}
+    mix-blend-mode: screen; 
+    opacity: 0.8; 
+    pointer-events: none; 
+} */
 
 header .navbar a:hover,
 header .fa-bars:hover{
